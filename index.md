@@ -99,7 +99,8 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 .sectionlead{ color:var(--muted); margin-top:-2px; }
 </style>
 
-<div class="hero">
+<div class="hero hero-v2">
+  <!-- Left: photo -->
   <div class="leftcol">
     <img class="avatar" src="assets/img/avatar.jpg" alt="Qishi Dong" onerror="this.style.display='none'">
     <div class="small">
@@ -107,27 +108,38 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
     </div>
   </div>
 
-  <div>
+  <!-- Middle: identity -->
+  <div class="mid">
     <div class="h1">董其实 <span class="small">| Qishi Dong</span></div>
     <div class="subtitle">深圳技术大学 · 大数据与互联网学院 · 助理教授</div>
-    <div class="meta">统计学习 / 生物统计 / 空间组学 / 医疗健康数据建模</div>
+
+    <div class="meta meta2">
+      Statistical learning · Biostatistics · Spatial omics · Wearable sensing
+    </div>
 
     <div class="btns">
       <a class="btn" href="mailto:dongqishi@sztu.edu.cn">Email</a>
-      <a class="btn" href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">ORCID</a>
-      <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noopener">Scholar</a>
       <a class="btn" href="https://github.com/SpatialOmics-pj/dongqishi" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="assets/files/CV.pdf">CV</a>
     </div>
 
-    <div class="tags">
+    <div class="tags tags2">
       <span class="tag">Spatial transcriptomics</span>
-      <span class="tag">Bayesian / Variational inference</span>
+      <span class="tag">Bayesian inference</span>
+      <span class="tag">Variational inference</span>
       <span class="tag">Deep probabilistic models</span>
       <span class="tag">Fine-mapping</span>
-      <span class="tag">Wearable sensing</span>
     </div>
 
+    <div class="note note2">
+      欢迎对 <b>统计建模、生物统计、空间组学</b> 与 <b>医疗器械/可穿戴算法落地</b> 感兴趣的同学与合作伙伴联系：
+      <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>
+    </div>
+  </div>
+
+  <!-- Right: cards -->
+  <div class="right">
     <div class="info-cards">
       <div class="icard">
         <div class="icard-h"><span class="ico">📍</span><span class="ttl">地址</span></div>
@@ -136,24 +148,24 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 
       <div class="icard">
         <div class="icard-h"><span class="ico">🔬</span><span class="ttl">研究主题</span></div>
-        <div class="icard-b">空间组学整合 · 细胞类型解卷积与域识别 · 可信推断 · 无创生理信号建模</div>
+        <div class="icard-b">
+          空间组学跨切片整合、细胞类型解卷积与空间域识别、可校准可信推断、
+          以及无创生理信号（PPG/ECG）建模与个体化校准。
+        </div>
       </div>
 
       <div class="icard">
         <div class="icard-h"><span class="ico">🤝</span><span class="ttl">合作</span></div>
-        <div class="icard-b">欢迎学术与产业合作（算法研发、数据分析、产品落地）</div>
+        <div class="icard-b">欢迎学术与产业合作（算法研发、数据分析、产品落地）。</div>
+        <div class="icard-actions">
+          <a class="mini-btn" href="mailto:dongqishi@sztu.edu.cn?subject=Collaboration%20Inquiry">合作邮件</a>
+          <a class="mini-btn" href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">ORCID</a>
+        </div>
       </div>
     </div>
-
-    <div class="note">
-      课题组氛围融洽，有持续产出，包含多位博士和硕士，欢迎对 <b>统计建模、生物统计、空间组学</b> 以及 <b>医疗器械/可穿戴算法落地</b> 感兴趣的同学联系。
-      <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>。
-    </div>
   </div>
-
-  <!-- 第三列如果你不想放内容，也建议留一个空占位，避免 grid 看起来不平衡 -->
-  <div></div>
 </div>
+
 
 
 
