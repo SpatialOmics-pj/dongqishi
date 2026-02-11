@@ -1,9 +1,4 @@
 
----
-layout: default
-title: 董其实 | Qishi Dong
----
-
 <style>
 /* ===== Page-specific styles ===== */
 :root{
@@ -21,6 +16,11 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
   border-radius:18px;
   background:var(--card);
 }
+
+.hero { align-items: stretch; }
+.hero > * { min-width: 0; }   /* ★关键：允许三列在 grid 内收缩，不再撑破外框 */
+.hero { max-width: 1200px; margin: 0 auto; }
+
 @media (max-width: 980px){
   .hero{ grid-template-columns: 1fr; }
 }
