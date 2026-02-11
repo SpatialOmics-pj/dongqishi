@@ -17,9 +17,19 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
   background:var(--card);
 }
 
+/* ===== overflow fix for hero grid ===== */
 .hero { align-items: stretch; }
-.hero > * { min-width: 0; }   /* ★关键：允许三列在 grid 内收缩，不再撑破外框 */
+.hero > * { min-width: 0; }      /* MUST: allow grid items shrink */
+.mid, .right { min-width: 0; }   /* if you use these classes */
+
+.right, .right *{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* optional: keep the hero nicely centered */
 .hero { max-width: 1200px; margin: 0 auto; }
+
 
 @media (max-width: 980px){
   .hero{ grid-template-columns: 1fr; }
