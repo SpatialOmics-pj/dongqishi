@@ -9,13 +9,14 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 
 .hero{
   display:grid;
-  grid-template-columns: 180px minmax(420px, 1.2fr) minmax(320px, .9fr);
+  grid-template-columns: 180px minmax(0, 1.2fr) minmax(0, .9fr); /* ← 把 420/320 改成 0 */
   gap:16px;
   padding:18px;
   border:1px solid var(--bd);
   border-radius:18px;
   background:var(--card);
 }
+
 
 /* ===== overflow fix for hero grid ===== */
 .hero { align-items: stretch; }
@@ -124,14 +125,13 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
     <div class="subtitle">深圳技术大学 · 大数据与互联网学院 · 助理教授</div>
 
     <div class="meta meta2">
-      Statistical learning · Biostatistics · Spatial omics · Wearable sensing
+      Statistical learning · Biostatistics · Spatial omics · Deep Learning
     </div>
 
     <div class="btns">
       <a class="btn" href="mailto:dongqishi@sztu.edu.cn">Email</a>
       <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noopener">Scholar</a>
       <a class="btn" href="https://github.com/SpatialOmics-pj/dongqishi" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="assets/files/CV.pdf">CV</a>
     </div>
 
     <div class="tags tags2">
