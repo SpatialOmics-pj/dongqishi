@@ -53,9 +53,7 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 
     <div class="btns">
       <a class="btn" href="mailto:dongqishi@sztu.edu.cn">Email</a>
-      <a class="btn" href="https://scholar.google.com/">Google Scholar</a>
       <a class="btn" href="https://github.com/SpatialOmics-pj/dongqishi">GitHub</a>
-      <a class="btn" href="/assets/files/CV.pdf">CV</a>
     </div>
 
     <div class="tags">
