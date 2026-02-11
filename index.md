@@ -101,8 +101,7 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 
 <div class="hero">
   <div class="leftcol">
-    <!-- Upload your photo to: assets/img/avatar.jpg -->
-    <img class="avatar" src="/assets/img/avatar.jpg" alt="Qishi Dong" onerror="this.style.display='none'">
+    <img class="avatar" src="assets/img/avatar.jpg" alt="Qishi Dong" onerror="this.style.display='none'">
     <div class="small">
       ORCID: <a href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">0009-0005-6994-598X</a>
     </div>
@@ -118,7 +117,7 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
       <a class="btn" href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">ORCID</a>
       <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
       <a class="btn" href="https://github.com/SpatialOmics-pj/dongqishi" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="/assets/files/CV.pdf">CV</a>
+      <a class="btn" href="assets/files/CV.pdf">CV</a>
     </div>
 
     <div class="tags">
@@ -130,37 +129,32 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
     </div>
 
     <div class="info-cards">
-  <div class="icard">
-    <div class="icard-h">
-      <span class="ico">📍</span><span class="ttl">地址</span>
-    </div>
-    <div class="icard-b">深圳，中国</div>
-  </div>
+      <div class="icard">
+        <div class="icard-h"><span class="ico">📍</span><span class="ttl">地址</span></div>
+        <div class="icard-b">深圳，中国</div>
+      </div>
 
-  <div class="icard">
-    <div class="icard-h">
-      <span class="ico">🔬</span><span class="ttl">研究主题</span>
-    </div>
-    <div class="icard-b">
-      空间组学整合 · 细胞类型解卷积与域识别 · 可信推断 · 无创生理信号建模
-    </div>
-  </div>
+      <div class="icard">
+        <div class="icard-h"><span class="ico">🔬</span><span class="ttl">研究主题</span></div>
+        <div class="icard-b">空间组学整合 · 细胞类型解卷积与域识别 · 可信推断 · 无创生理信号建模</div>
+      </div>
 
-  <div class="icard">
-    <div class="icard-h">
-      <span class="ico">🤝</span><span class="ttl">合作</span>
+      <div class="icard">
+        <div class="icard-h"><span class="ico">🤝</span><span class="ttl">合作</span></div>
+        <div class="icard-b">欢迎学术与产业合作（算法研发、数据分析、产品落地）</div>
+      </div>
     </div>
-    <div class="icard-b">
-      欢迎学术与产业合作（算法研发、数据分析、产品落地）
-    </div>
-  </div>
-</div>
 
     <div class="note">
       课题组氛围融洽，有持续产出，包含多位博士和硕士，欢迎对 <b>统计建模、生物统计、空间组学</b> 以及 <b>医疗器械/可穿戴算法落地</b> 感兴趣的同学联系。
       <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>。
     </div>
   </div>
+
+  <!-- 第三列如果你不想放内容，也建议留一个空占位，避免 grid 看起来不平衡 -->
+  <div></div>
+</div>
+
 
 
 <h2 id="about">About</h2>
