@@ -1,45 +1,19 @@
-
 <style>
-/* ===== Page-specific styles ===== */
 :root{
   --fg:#0f172a; --muted:#475569; --card:#f8fafc; --bd:#e2e8f0;
   --tag:#eef2ff; --tagbd:#c7d2fe; --tagfg:#1e3a8a;
 }
+
+/* Make headings consistent with the page style (override Cayman green) */
+h1,h2,h3{ color:var(--fg) !important; font-weight:800; }
+h2{ margin-top:1.6rem; }
+p{ color:var(--fg); }
 hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 
+/* ===== HERO GRID (stable) ===== */
 .hero{
   display:grid;
-  grid-template-columns: 180px minmax(0, 1.2fr) minmax(0, .9fr); /* ← 把 420/320 改成 0 */
-  gap:16px;
-  padding:18px;
-  border:1px solid var(--bd);
-  border-radius:18px;
-  background:var(--card);
-}
-
-
-/* ===== overflow fix for hero grid ===== */
-.hero { align-items: stretch; }
-.hero > * { min-width: 0; }      /* MUST: allow grid items shrink */
-.mid, .right { min-width: 0; }   /* if you use these classes */
-
-.right, .right *{
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-
-/* optional: keep the hero nicely centered */
-.hero { max-width: 1200px; margin: 0 auto; }
-
-
-@media (max-width: 980px){
-  .hero{ grid-template-columns: 1fr; }
-}
-
-  /* ===== stable hero grid (fix layout chaos) ===== */
-.hero{
-  display:grid;
-  grid-template-columns: 180px minmax(0, 1.2fr) minmax(0, .9fr);
+  grid-template-columns: 180px minmax(0, 1.15fr) minmax(0, .85fr);
   gap:16px;
   padding:18px;
   border:1px solid var(--bd);
@@ -48,12 +22,12 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
   align-items:stretch;
 }
 .hero > *{ min-width:0; }
-
-/* mid / right safety */
+.leftcol{ display:flex; flex-direction:column; gap:10px; align-items:flex-start; }
 .mid, .right{ min-width:0; }
+.right{ align-self:start; }
 .right, .right *{ overflow-wrap:anywhere; word-break:break-word; }
 
-/* responsive: move right panel down on medium screens */
+/* Responsive */
 @media (max-width: 1100px){
   .hero{ grid-template-columns: 180px 1fr; }
   .hero .right{ grid-column: 1 / -1; }
@@ -62,62 +36,52 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
   .hero{ grid-template-columns: 1fr; }
 }
 
-/* compact info cards (version 1) */
-.info-cards.compact{
-  margin-top:0;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
-.info-cards.compact .icard{
-  padding:12px 14px;
-  background:#fff;
-  border:1px solid var(--bd);
-  border-radius:14px;
-}
-.info-cards.compact .icard-h{
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-}
-.info-cards.compact .ico{
-  width:26px;
-  flex:0 0 26px;
-  margin-top:1px;
-}
-.info-cards.compact .icard-line{
-  line-height:1.55;
-  overflow-wrap:anywhere;
-  word-break:break-word;
-}
-
-/* optional: unify headings */
-h2{ color:var(--fg) !important; font-weight:800; }
-
+/* Avatar */
 .avatar{
   width:160px; height:160px; border-radius:18px; object-fit:cover;
   border:1px solid var(--bd); background:#fff;
 }
-.leftcol{ display:flex; flex-direction:column; gap:10px; align-items:flex-start; }
 .small{ font-size:.92rem; color:var(--muted); }
 
-.h1{ font-size:2.05rem; font-weight:800; margin:2px 0 4px; color:var(--fg); }
+/* Name block */
+.h1{
+  font-size:2.05rem;
+  font-weight:900;
+  margin:2px 0 4px;
+  color:var(--fg);
+  letter-spacing:.2px;
+}
 .subtitle{ color:var(--muted); font-size:1.05rem; margin:0 0 6px; }
-.meta{ color:var(--muted); margin:6px 0 0; }
+.meta{ color:var(--muted); margin:6px 0 0; line-height:1.55; }
 
-.btns{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+/* Buttons */
+.btns{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
 .btn{
-  display:inline-block; padding:7px 12px; border:1px solid var(--bd);
-  border-radius:999px; background:#fff; color:var(--fg); font-size:.95rem;
+  display:inline-block;
+  padding:8px 14px;
+  border:1px solid var(--bd);
+  border-radius:999px;
+  background:#fff;
+  color:var(--fg);
+  font-size:.95rem;
+  font-weight:700;
 }
 .btn:hover{ text-decoration:none; border-color:#cbd5e1; }
 
+/* Tags */
 .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
 .tag{
-  display:inline-block; padding:5px 10px; border-radius:999px;
-  background:var(--tag); color:var(--tagfg); border:1px solid var(--tagbd); font-size:.86rem;
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background:var(--tag);
+  color:var(--tagfg);
+  border:1px solid var(--tagbd);
+  font-size:.86rem;
+  font-weight:650;
 }
 
+/* Note */
 .note{
   margin-top:14px;
   padding:12px 14px;
@@ -125,55 +89,82 @@ h2{ color:var(--fg) !important; font-weight:800; }
   background:#f5f7ff;
   border-radius:12px;
   color:#334155;
+  line-height:1.6;
 }
+.note a{ font-weight:800; }
 
-.kv{
-  display:grid;
-  grid-template-columns: 84px minmax(0, 1fr);
-  gap:10px 12px;
-  align-content:start;
+/* Right panel (icon + content, clean) */
+.sidepanel{
+  background:#fff;
+  border:1px solid var(--bd);
+  border-radius:16px;
+  padding:10px 12px;
 }
-.k{ color:var(--muted); font-weight:600; }
-.v{
-  max-width: 100%;
-  white-space: normal;
+.srow{
+  display:flex;
+  gap:10px;
+  padding:10px 6px;
+}
+.srow + .srow{ border-top:1px solid var(--bd); }
+.srow .ico{
+  width:26px;
+  flex:0 0 26px;
+  margin-top:2px;
+}
+.stext{
+  min-width:0;
   color:var(--fg);
   line-height:1.55;
-  overflow-wrap:anywhere; /* avoid ultra-narrow vertical look */
-  word-break:break-word;
 }
+.ssub{ color:var(--muted); font-size:.92rem; margin-top:4px; }
+.sactions{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
+.mini-btn{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--bd);
+  background:#fff;
+  color:var(--fg);
+  font-size:.9rem;
+  font-weight:750;
+}
+.mini-btn:hover{ text-decoration:none; border-color:#cbd5e1; }
 
-.pubgroup{ margin-top:12px; }
+/* Publication cards */
+.pubgroup{ margin-top:10px; }
 .pubitem{
-  display:flex; gap:14px;
+  display:flex;
+  gap:14px;
   padding:14px;
   border:1px solid var(--bd);
   border-radius:16px;
   background:#fff;
-  margin:10px 0;
+  margin:12px 0;
 }
 @media (max-width: 820px){ .pubitem{ flex-direction:column; } }
-
 .pubimg img{
   width:160px; height:120px; object-fit:cover;
   border:1px solid var(--bd); border-radius:12px; background:#fff;
 }
-.pubtitle{ font-weight:800; margin:0 0 4px; }
-.puba{ color:var(--muted); font-size:.94rem; margin:0 0 2px; }
-.pubv{ color:#334155; font-size:.95rem; margin:0 0 6px; }
-.pubd{ color:#334155; margin:6px 0 0; }
+.pubtitle{ font-weight:900; margin:0 0 4px; color:var(--fg); }
+.puba{ color:var(--muted); font-size:.94rem; margin:0 0 3px; }
+.pubv{ color:#334155; font-size:.95rem; margin:0 0 8px; }
 .publinks{ margin-top:8px; font-size:.95rem; }
-.publinks a{ margin-right:10px; }
+.publinks a{ margin-right:12px; font-weight:750; }
 
-.sectionlead{ color:var(--muted); margin-top:-2px; }
+/* Section lead text */
+.sectionlead{ color:var(--muted); margin-top:-4px; line-height:1.7; }
 </style>
 
-<div class="hero hero-v2">
-  <!-- Left: photo -->
+<!-- ===================== HERO ===================== -->
+<div class="hero">
+
+  <!-- Left: photo + ORCID -->
   <div class="leftcol">
     <img class="avatar" src="assets/img/avatar.jpg" alt="Qishi Dong" onerror="this.style.display='none'">
     <div class="small">
-      ORCID: <a href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">0009-0005-6994-598X</a>
+      ORCID:
+      <a href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">0009-0005-6994-598X</a>
     </div>
   </div>
 
@@ -181,18 +172,16 @@ h2{ color:var(--fg) !important; font-weight:800; }
   <div class="mid">
     <div class="h1">董其实 <span class="small">| Qishi Dong</span></div>
     <div class="subtitle">深圳技术大学 · 大数据与互联网学院 · 助理教授</div>
-
-    <div class="meta meta2">
-      Statistical learning · Biostatistics · Spatial omics · Deep Learning
-    </div>
+    <div class="meta">Statistical learning · Biostatistics · Spatial omics · Deep Learning</div>
 
     <div class="btns">
       <a class="btn" href="mailto:dongqishi@sztu.edu.cn">Email</a>
       <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noopener">Scholar</a>
       <a class="btn" href="https://github.com/SpatialOmics-pj/dongqishi" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="/assets/files/CV.pdf">CV</a>
     </div>
 
-    <div class="tags tags2">
+    <div class="tags">
       <span class="tag">Spatial transcriptomics</span>
       <span class="tag">Bayesian inference</span>
       <span class="tag">Variational inference</span>
@@ -200,45 +189,44 @@ h2{ color:var(--fg) !important; font-weight:800; }
       <span class="tag">Fine-mapping</span>
     </div>
 
-    <div class="note note2">
+    <div class="note">
       欢迎对 <b>统计建模、生物统计、空间组学</b> 与 <b>医疗器械/可穿戴算法落地</b> 感兴趣的同学与合作伙伴联系：
       <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>
     </div>
   </div>
 
-<!-- Right: cards -->
-<div class="right">
-  <div class="info-cards compact">
-    <div class="icard">
-      <div class="icard-h">
+  <!-- Right: clean panel -->
+  <div class="right">
+    <div class="sidepanel">
+      <div class="srow">
         <span class="ico">📍</span>
-        <span class="icard-line">中国 · 深圳</span>
+        <div class="stext">
+          中国 · 深圳
+          <div class="ssub">Shenzhen, China</div>
+        </div>
       </div>
-    </div>
 
-    <div class="icard">
-      <div class="icard-h">
+      <div class="srow">
         <span class="ico">🔬</span>
-        <span class="icard-line">
+        <div class="stext">
           空间组学跨切片整合 · 细胞类型解卷积与空间域识别 · 可校准可信推断 · 无创生理信号（PPG/ECG）建模与个体化校准
-        </span>
+        </div>
       </div>
-    </div>
 
-    <div class="icard">
-      <div class="icard-h">
+      <div class="srow">
         <span class="ico">🤝</span>
-        <span class="icard-line">欢迎学术与产业合作（算法研发、数据分析、产品落地）</span>
-      </div>
-      <div class="icard-actions">
-        <a class="mini-btn" href="mailto:dongqishi@sztu.edu.cn?subject=Collaboration%20Inquiry">合作邮件</a>
-        <a class="mini-btn" href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">ORCID</a>
+        <div class="stext">
+          欢迎学术与产业合作（算法研发、数据分析、产品落地）
+          <div class="sactions">
+            <a class="mini-btn" href="mailto:dongqishi@sztu.edu.cn?subject=Collaboration%20Inquiry">合作邮件</a>
+            <a class="mini-btn" href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">ORCID</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
-
-
 
 
 <h2 id="about">About</h2>
