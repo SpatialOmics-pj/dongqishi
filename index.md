@@ -93,6 +93,27 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 }
 .note a{ font-weight:800; }
 
+.note{
+  margin-top:14px;
+  padding:12px 14px;
+  border-left:4px solid var(--tagbd);
+  background:#f5f7ff;
+  border-radius:12px;
+  color:#334155;
+  line-height:1.6;
+}
+.note a{ font-weight:800; }
+
+/* ✅ wide note across mid + right */
+.note-wide{
+  grid-column: 2 / 4;   /* span columns 2-3 */
+  margin-top: 12px;
+}
+@media (max-width: 1100px){
+  .note-wide{ grid-column: 1 / -1; } /* full width on smaller screens */
+}
+
+
 /* Right panel (icon + content, clean) */
 .sidepanel{
   background:#fff;
