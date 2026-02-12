@@ -207,7 +207,7 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
       <div class="srow">
         <span class="ico">🔬</span>
         <div class="stext">
-          统计学习 · 空间组学数据分析 · 贝叶斯统计 · 无创生理信号（PPG/ECG）建模与个体化校准
+          生命科学中的AI技术 · 贝叶斯统计 · 空间组学数据分析 · 无创生理信号建模与产品落地
         </div>
       </div>
 
