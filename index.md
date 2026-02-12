@@ -224,6 +224,15 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 
 </div>
 
+<!-- ===================== NEWS ===================== -->
+<h2 id="news">News</h2>
+<ul>
+  <li><b>2026</b> · 🎉 祝贺课题组论文 <i>An Empirical Bayes Algorithm for Variable Selection With Applications in Genetic Fine-Mapping</i> 发表于 <b>Stat</b>。</li>
+</ul>
+
+<hr/>
+
+
 <!-- ===================== ABOUT ===================== -->
 <h2 id="about">About</h2>
 <p class="sectionlead">
@@ -256,9 +265,9 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
       <img src="/assets/img/pubs/fusion.png" alt="FUSION" onerror="this.style.display='none'">
     </div>
     <div>
-      <div class="pubtitle">Efficient Latent-Topic Modeling Unifies Cell-Type Deconvolution and Domain Discovery for Multi-Section Spatial Transcriptomics</div>
+      <div class="pubtitle">Composition-Aware Cross-Sectional Integration for Spatial Transcriptomics</div>
       <div class="puba">Dong, Q.†; Huang, Z.†; Wang, X.; Feng, Z.; Liu, W.; Huang, B.*</div>
-      <div class="pubv"><b>Manuscript</b>, 2026</div>
+      <div class="pubv"><b>Advanced Intelligent Discovery</b>, 2026</div>
       <div class="publinks">
         <a href="/assets/papers/FUSION.pdf">PDF</a>
       </div>
