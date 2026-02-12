@@ -175,28 +175,28 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
     </div>
   </div>
 
-  <!-- Right: side panel -->
+ <!-- Right: clean panel -->
   <div class="right">
     <div class="sidepanel">
       <div class="srow">
-        <div class="ico">📍</div>
-        <div class="stext"><b>中国 · 深圳</b></div>
-      </div>
-
-      <div class="srow">
-        <div class="ico">🔬</div>
+        <span class="ico">📍</span>
         <div class="stext">
-          <b>研究主题</b><br>
-          空间组学跨切片整合 · 细胞类型解卷积与空间域识别 · 可校准可信推断 ·
-          无创生理信号（PPG/ECG）建模与个体化校准
+          中国 · 深圳
+          <div class="ssub">Shenzhen, China</div>
         </div>
       </div>
 
       <div class="srow">
-        <div class="ico">🤝</div>
+        <span class="ico">🔬</span>
         <div class="stext">
-          <b>合作</b><br>
-          欢迎学术与产业合作（算法研发、数据分析、产品落地）
+          生命科学中的AI技术 · 贝叶斯统计 · 空间组学数据分析 · 无创生理信号建模与产品落地
+        </div>
+      </div>
+
+      <div class="srow">
+        <span class="ico">🤝</span>
+        <div class="stext">
+          欢迎与我交流想法与合作
           <div class="sactions">
             <a class="mini-btn" href="mailto:dongqishi@sztu.edu.cn?subject=Collaboration%20Inquiry">合作邮件</a>
             <a class="mini-btn" href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">ORCID</a>
