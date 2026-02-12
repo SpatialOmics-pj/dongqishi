@@ -190,7 +190,7 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
     </div>
 
     <div class="note">
-      欢迎对 <b>统计建模、生物统计、空间组学</b> 与 <b>医疗器械/可穿戴算法落地</b> 感兴趣的同学与合作伙伴联系：
+      课题组氛围融洽，结构合理，包含多位博士、硕士和本科生，且有稳定产出，欢迎对 <b>数据建模、生物统计、深度学习</b> 与 <b>可穿戴算法落地</b> 感兴趣的同学报考联系：
       <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>
     </div>
   </div>
@@ -209,17 +209,15 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
       <div class="srow">
         <span class="ico">🔬</span>
         <div class="stext">
-          空间组学跨切片整合 · 细胞类型解卷积与空间域识别 · 可校准可信推断 · 无创生理信号（PPG/ECG）建模与个体化校准
+          统计学习 · 空间组学数据分析 · 贝叶斯统计 · 无创生理信号（PPG/ECG）建模与个体化校准
         </div>
       </div>
 
       <div class="srow">
         <span class="ico">🤝</span>
         <div class="stext">
-          欢迎学术与产业合作（算法研发、数据分析、产品落地）
+          欢迎与我交流想法与合作
           <div class="sactions">
-            <a class="mini-btn" href="mailto:dongqishi@sztu.edu.cn?subject=Collaboration%20Inquiry">合作邮件</a>
-            <a class="mini-btn" href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">ORCID</a>
           </div>
         </div>
       </div>
@@ -240,10 +238,10 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 <!-- ===================== RESEARCH ===================== -->
 <h2 id="research">Research</h2>
 <ul>
-  <li><b>空间组学（Spatial omics）</b>：多切片/多平台空间转录组整合、细胞类型解卷积、空间域识别与对齐</li>
-  <li><b>统计推断（Bayesian & VI）</b>：变分推断、可校准不确定性、可解释表征学习</li>
-  <li><b>遗传统计（Statistical genetics）</b>：Empirical Bayes 变量选择与遗传 fine-mapping</li>
-  <li><b>可穿戴与医疗器械算法</b>：PPG/ECG 等生理信号建模、个体校准与鲁棒推理</li>
+  <li><b>贝叶斯统计推断（Bayesian & VI）</b></li>
+  <li><b>空间组学分析（Spatial omics）</b></li>
+  <li><b>深度学习（Deep Learning）</b></li>
+  <li><b>可穿戴与医疗器械算法</b></li>
 </ul>
 
 <hr/>
