@@ -187,10 +187,12 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
       <span class="tag">Spatial omics data analysis</span>
     </div>
 
-    <div class="note">
-      课题组氛围融洽,结构合理，包含多位博士、硕士和本科生，且有稳定产出，欢迎对 <b>数据建模、生物统计、深度学习</b> 与 <b>可穿戴算法落地</b> 感兴趣的同学报考, 优秀者可直接推荐升学或者就业：
-      <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>
-    </div>
+
+    <!-- wide note across mid + right -->
+  <div class="note note-wide">
+    课题组氛围融洽,结构合理，包含多位博士、硕士和本科生，且有稳定产出，欢迎对 <b>数据建模、生物统计、深度学习</b> 与 <b>可穿戴算法落地</b> 感兴趣的同学报考, 优秀者可直接推荐升学或者就业：
+    <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>
+  </div>
   </div>
 
   <!-- Right: clean panel -->
