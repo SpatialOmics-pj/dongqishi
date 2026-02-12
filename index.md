@@ -4,7 +4,7 @@
   --tag:#eef2ff; --tagbd:#c7d2fe; --tagfg:#1e3a8a;
 }
 
-/* Make headings consistent with the page style (override Cayman green) */
+/* Override Cayman green headings */
 h1,h2,h3{ color:var(--fg) !important; font-weight:800; }
 h2{ margin-top:1.6rem; }
 p{ color:var(--fg); }
@@ -19,18 +19,21 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
   border:1px solid var(--bd);
   border-radius:18px;
   background:var(--card);
-  align-items:stretch;
+  align-items:start;
 }
+
+/* IMPORTANT: allow grid children to shrink (prevents overflow) */
 .hero > *{ min-width:0; }
+
 .leftcol{ display:flex; flex-direction:column; gap:10px; align-items:flex-start; }
 .mid, .right{ min-width:0; }
-.right{ align-self:start; }
 .right, .right *{ overflow-wrap:anywhere; word-break:break-word; }
 
 /* Responsive */
 @media (max-width: 1100px){
   .hero{ grid-template-columns: 180px 1fr; }
   .hero .right{ grid-column: 1 / -1; }
+  .note-wide{ grid-column: 1 / -1; } /* full width on smaller screens */
 }
 @media (max-width: 720px){
   .hero{ grid-template-columns: 1fr; }
@@ -38,8 +41,11 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 
 /* Avatar */
 .avatar{
-  width:160px; height:160px; border-radius:18px; object-fit:cover;
-  border:1px solid var(--bd); background:#fff;
+  width:160px; height:160px;
+  border-radius:18px;
+  object-fit:cover;
+  border:1px solid var(--bd);
+  background:#fff;
 }
 .small{ font-size:.92rem; color:var(--muted); }
 
@@ -93,28 +99,13 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 }
 .note a{ font-weight:800; }
 
-.note{
-  margin-top:14px;
-  padding:12px 14px;
-  border-left:4px solid var(--tagbd);
-  background:#f5f7ff;
-  border-radius:12px;
-  color:#334155;
-  line-height:1.6;
-}
-.note a{ font-weight:800; }
-
-/* ✅ wide note across mid + right */
+/* ✅ wide note across mid + right (must be direct child of .hero) */
 .note-wide{
-  grid-column: 2 / 4;   /* span columns 2-3 */
+  grid-column: 2 / 4; /* span mid + right */
   margin-top: 12px;
 }
-@media (max-width: 1100px){
-  .note-wide{ grid-column: 1 / -1; } /* full width on smaller screens */
-}
 
-
-/* Right panel (icon + content, clean) */
+/* Right panel */
 .sidepanel{
   background:#fff;
   border:1px solid var(--bd);
@@ -137,7 +128,6 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
   color:var(--fg);
   line-height:1.55;
 }
-.ssub{ color:var(--muted); font-size:.92rem; margin-top:4px; }
 .sactions{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
 .mini-btn{
   display:inline-block;
@@ -151,30 +141,6 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
 }
 .mini-btn:hover{ text-decoration:none; border-color:#cbd5e1; }
 
-/* Publication cards */
-.pubgroup{ margin-top:10px; }
-.pubitem{
-  display:flex;
-  gap:14px;
-  padding:14px;
-  border:1px solid var(--bd);
-  border-radius:16px;
-  background:#fff;
-  margin:12px 0;
-}
-@media (max-width: 820px){ .pubitem{ flex-direction:column; } }
-.pubimg img{
-  width:160px; height:120px; object-fit:cover;
-  border:1px solid var(--bd); border-radius:12px; background:#fff;
-}
-.pubtitle{ font-weight:900; margin:0 0 4px; color:var(--fg); }
-.puba{ color:var(--muted); font-size:.94rem; margin:0 0 3px; }
-.pubv{ color:#334155; font-size:.95rem; margin:0 0 8px; }
-.publinks{ margin-top:8px; font-size:.95rem; }
-.publinks a{ margin-right:12px; font-weight:750; }
-
-/* Section lead text */
-.sectionlead{ color:var(--muted); margin-top:-4px; line-height:1.7; }
 </style>
 
 <!-- ===================== HERO ===================== -->
@@ -207,45 +173,49 @@ hr{ border:none; border-top:1px solid var(--bd); margin:1.5rem 0; }
       <span class="tag">Statistical inference</span>
       <span class="tag">Spatial omics data analysis</span>
     </div>
-
-
-    <!-- wide note across mid + right -->
-  <div class="note note-wide">
-    课题组氛围融洽,结构合理，包含多位博士、硕士和本科生，且有稳定产出，欢迎对 <b>数据建模、生物统计、深度学习</b> 与 <b>可穿戴算法落地</b> 感兴趣的同学报考, 优秀者可直接推荐升学或者就业：
-    <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>
-  </div>
   </div>
 
-  <!-- Right: clean panel -->
+  <!-- Right: side panel -->
   <div class="right">
     <div class="sidepanel">
       <div class="srow">
-        <span class="ico">📍</span>
+        <div class="ico">📍</div>
+        <div class="stext"><b>中国 · 深圳</b></div>
+      </div>
+
+      <div class="srow">
+        <div class="ico">🔬</div>
         <div class="stext">
-          中国 · 深圳
-          <div class="ssub">Shenzhen, China</div>
+          <b>研究主题</b><br>
+          空间组学跨切片整合 · 细胞类型解卷积与空间域识别 · 可校准可信推断 ·
+          无创生理信号（PPG/ECG）建模与个体化校准
         </div>
       </div>
 
       <div class="srow">
-        <span class="ico">🔬</span>
+        <div class="ico">🤝</div>
         <div class="stext">
-          生命科学中的AI技术 · 贝叶斯统计 · 空间组学数据分析 · 无创生理信号建模与产品落地
-        </div>
-      </div>
-
-      <div class="srow">
-        <span class="ico">🤝</span>
-        <div class="stext">
-          欢迎与我交流想法与合作
+          <b>合作</b><br>
+          欢迎学术与产业合作（算法研发、数据分析、产品落地）
           <div class="sactions">
+            <a class="mini-btn" href="mailto:dongqishi@sztu.edu.cn?subject=Collaboration%20Inquiry">合作邮件</a>
+            <a class="mini-btn" href="https://orcid.org/0009-0005-6994-598X" target="_blank" rel="noopener">ORCID</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- ✅ wide note: must be direct child of .hero, placed AFTER mid/right -->
+  <div class="note note-wide">
+    课题组氛围融洽、结构合理，包含多位博士、硕士和本科生，且有稳定产出。
+    欢迎对 <b>数据建模、生物统计、深度学习</b> 与 <b>可穿戴算法落地</b> 感兴趣的同学报考；
+    优秀者可直接推荐升学或就业：
+    <a href="mailto:dongqishi@sztu.edu.cn">dongqishi@sztu.edu.cn</a>
+  </div>
+
 </div>
+
 
 <!-- ===================== NEWS ===================== -->
 <h2 id="news">News</h2>
