@@ -12,7 +12,10 @@ author_profile: true
 
 ## Industry Collaboration
 
-- **赛博派（无锡）科技有限责任公司 × 深圳技术大学**  
+- **赛博派（无锡）科技有限责任公司**  
   足踝智能规划与分析系统开发项目，2025.12–2026.8。
+
+- **深圳市创科动力科技有限公司**  
+  保险行业智能综合业务运营平台，2026.9–2029.9。
 
 如需了解技术合作与成果转化，请联系 [dongqishi@sztu.edu.cn](mailto:dongqishi@sztu.edu.cn)。
