@@ -3,7 +3,7 @@ site_theme: "default"
 title: "Qishi Dong"
 title_separator: "-"
 name: &name "Qishi Dong"
-description: &description "Assistant Professor at Shenzhen Technology University working on statistical learning, biostatistics, spatial omics, and medical AI."
+description: &description "Assistant Professor at Shenzhen Technology University working on statistical learning, biostatistics, and AI for Science."
 url: "https://spatialomics-pj.github.io"
 baseurl: "/dongqishi"
 repository: "SpatialOmics-pj/dongqishi"
@@ -14,7 +14,7 @@ remote_theme: "academicpages/academicpages.github.io@cccb41a7335dbec8354dfe7e8a7
 author:
   avatar: "avatar.jpg"
   name: *name
-  bio: "Spatial Omics · Biostatistics · Medical AI"
+  bio: "Spatial Omics · AI for Science · Biostatistics"
   location: "Shenzhen, China"
   employer: "Shenzhen Technology University"
   email: "dongqishi@sztu.edu.cn"
