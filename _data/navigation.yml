@@ -1,12 +1,12 @@
 main:
-  - title: "首页"
+  - title: "Introduction"
     url: /
 
-  - title: "研究与项目"
+  - title: "Research"
     url: /research/
 
-  - title: "论文"
+  - title: "Publications"
     url: /publications/
 
-  - title: "专利与合作"
+  - title: "Patents"
     url: /patents/
