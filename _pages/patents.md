@@ -12,7 +12,7 @@ author_profile: true
 
 ## Industry Collaboration
 
-- **森沛科技（深圳）有限公司 × 深圳技术大学**  
-  智能穿戴端 PPG 信号的可校准预测算法优化，2026.02–2026.12。
+- **赛博派（无锡）科技有限责任公司 × 深圳技术大学**  
+  足踝智能规划与分析系统开发项目，2025.12–2026.8。
 
 如需了解技术合作与成果转化，请联系 [dongqishi@sztu.edu.cn](mailto:dongqishi@sztu.edu.cn)。
