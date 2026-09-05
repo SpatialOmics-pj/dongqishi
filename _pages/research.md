@@ -25,5 +25,9 @@ author_profile: true
 
 2025-12-15 至 2026-08-31 · 130万元 · 参与
 
+保险行业智能综合业务运营平台
+
+2026-09-01 至 2029-09-01 · 100万元 · 参与
+
 
 For research collaboration, please contact [dongqishi@sztu.edu.cn](mailto:dongqishi@sztu.edu.cn).
