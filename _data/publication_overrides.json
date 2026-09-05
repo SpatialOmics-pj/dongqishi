@@ -1,0 +1,37 @@
+{
+  "exclude_dois": [
+    "10.1002/smtd.202570030"
+  ],
+  "works": {
+    "10.1002/aidi.202500226": {
+      "title": "Composition-Aware Cross-Sectional Integration for Spatial Transcriptomics",
+      "authors": "<strong>Dong, Q.</strong>†; Huang, Z.†; Wang, X.; Feng, Z.; Liu, W.; Huang, B.*",
+      "venue": "Advanced Intelligent Discovery",
+      "teaser": "assets/img/pubs/fusion.png"
+    },
+    "10.1002/sta4.70142": {
+      "title": "An Empirical Bayes Algorithm for Variable Selection With Applications in Genetic Fine-Mapping",
+      "authors": "<strong>Dong, Q.</strong>*; Wang, X.*; Guan, X.; Liang, L.; Ke, X.#; Peng, H.",
+      "venue": "Stat",
+      "teaser": "assets/img/pubs/empbvs.png"
+    },
+    "10.1002/smtd.202401145": {
+      "title": "Robust Spatial Cell-Type Deconvolution with Qualitative Reference for Spatial Transcriptomics",
+      "authors": "<strong>Dong, Q.</strong>*; Yang, Y.*; Luo, Z.; Shen, H.; Shi, X.#; Liu, J.#",
+      "venue": "Small Methods",
+      "teaser": "assets/img/pubs/qrside.png"
+    },
+    "10.1609/aaai.v37i4.25543": {
+      "title": "DAMix: Exploiting Deep Autoregressive Model Zoo for Improving Lossless Compression Generalization",
+      "authors": "<strong>Dong, Q.</strong>; Zhou, F.; Kang, N.; Xie, C.; Zhang, S.; Li, J.; Peng, H.; Li, Z.*",
+      "venue": "AAAI",
+      "teaser": "assets/img/pubs/damix.png"
+    },
+    "10.52202/068431-2290": {
+      "title": "ZooD: Exploiting Model Zoo for Out-of-Distribution Generalization",
+      "authors": "<strong>Dong, Q.</strong>; Muhammad, A.; Zhou, F.; Xie, C.; Hu, T.; Yang, Y.; Bae, S.-H.; Li, Z.*",
+      "venue": "NeurIPS",
+      "teaser": "assets/img/pubs/zood.png"
+    }
+  }
+}

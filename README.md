@@ -1,25 +1,32 @@
-# dongqishi (GitHub Pages)
+# Qishi Dong — academic website
 
-This repo is configured as a GitHub Pages **project site**.
+Personal academic website for Qishi Dong, built with the
+[Academic Pages](https://academicpages.github.io/) Jekyll template and hosted
+as a GitHub Pages project site.
 
-## Files you should add
-- Photo: `assets/img/avatar.jpg`
-- CV: `assets/files/CV.pdf`
-- Paper PDFs (optional):
-  - `assets/papers/FUSION.pdf`
-  - `assets/papers/EmpBVS_clean.pdf`
-- Patent PDF:
-  - `assets/patents/202511359756X-专利申请受理通知书.pdf`
-- Publication thumbnails (optional):
-  - `assets/img/pubs/fusion.png`
-  - `assets/img/pubs/empbvs.png`
-  - `assets/img/pubs/qrside.png`
-  - `assets/img/pubs/damix.png`
-  - `assets/img/pubs/zood.png`
+## Publication updates
 
-## Enable Pages
-Repo Settings → Pages
-- Source: Deploy from a branch
-- Branch: `main` / Folder: `/ (root)`
+Publications are synchronized from the OpenAlex author record
+[`A5101217620`](https://openalex.org/A5101217620). A GitHub Actions workflow
+runs every Monday and can also be started manually from the Actions tab.
 
-If “Save” is disabled, ensure you have pushed at least one commit to the selected branch and you have admin permission.
+The update script only replaces files named `_publications/auto-*.md`. Manual
+publication files are never removed. Known metadata corrections, thumbnail
+choices, and excluded duplicate records live in
+`_data/publication_overrides.json`.
+
+To refresh locally:
+
+```bash
+python3 scripts/update_publications.py
+```
+
+To preview the site locally:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+The repository lockfile also includes Linux so the same dependency set is used
+by local previews and the website validation workflow.
