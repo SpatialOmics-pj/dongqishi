@@ -7,15 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-I am an Assistant Professor in the College of Big Data and Internet at Shenzhen Technology University. I received my Ph.D. in Statistics from Hong Kong Baptist University in 2023. Before joining SZTU, I worked at Huawei Noah's Ark Lab, The Chinese University of Hong Kong (Shenzhen), and The University of Hong Kong.
+I am an Assistant Professor in the College of Big Data and Internet at Shenzhen Technology University. I received my Ph.D. in Statistics from Hong Kong Baptist University in 2023. Before joining SZTU, I worked at Huawei Noah's Ark Lab and The Chinese University of Hong Kong (Shenzhen), and was a postdoctoral fellow at The University of Hong Kong.
 
 ## Research Areas
 
-Spatial omics, statistical learning and biostatistics, medical AI and wearable biosignals.
+Spatial omics analysis, statistical learning and biostatistics, AI for Science, and agentic AI.
 
 ## Openings
 
-Students interested in data modelling, spatial omics, deep learning, or wearable-health algorithms are welcome to contact me at [dongqishi@sztu.edu.cn](mailto:dongqishi@sztu.edu.cn).
+Students interested in data modeling, AI for Science, large language model and agentic AI are welcome to contact me at [dongqishi@sztu.edu.cn](mailto:dongqishi@sztu.edu.cn).
 
 ## Recent Updates
 
