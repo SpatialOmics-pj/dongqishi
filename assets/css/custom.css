@@ -5,6 +5,22 @@
   bottom: auto;
 }
 
+/* Keep the portrait square while anchoring the crop at the top, so the full
+   hairstyle remains visible in both the desktop and compact author profile. */
+.author__avatar img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (min-width: 64em) {
+  .author__avatar img {
+    width: 175px;
+    height: 175px;
+  }
+}
+
 .page__content h2 {
   margin-top: 2rem;
 }
