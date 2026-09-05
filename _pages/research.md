@@ -7,8 +7,8 @@ author_profile: true
 
 ## Research Interests
 
-- Spatial omics and single-cell mapping
-- Statistical learning
+- Spatial omics and single-cell analysis
+- Statistical learning and biosignal modeling
 - AI for science
 
 ## Funded Project
