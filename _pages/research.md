@@ -8,21 +8,22 @@ author_profile: true
 ## Research Interests
 
 - Spatial omics and single-cell mapping
-- Bayesian statistics and high-dimensional inference
-- Medical AI and wearable biosignal modelling
+- Statistical learning
+- AI for science
 
 ## Funded Project
 
-**Principal Investigator**
+**主持**
 
-2025年度深圳市基础研究专项青年项目C类
+2025年度深圳市基础研究专项青年项目C类 
 
-2026-05-26 至 2028-05-25 · Ongoing
+2026-05-26 至 2028-05-25 · 30万元 · 在研
 
-## Collaboration
+**参与**
 
-- **Senpei Technology (Shenzhen) × SZTU** — Calibrated prediction algorithms for wearable PPG signals, 2026.02–2026.12.
-- **Chinese PLA General Hospital** — Spatial multi-omics data analysis.
-- **Sichuan University** — Spatial deconvolution algorithms.
+足踝智能规划与分析系统开发项目
+
+2025-12-15 至 2026-08-31 · 130万元 · 参与
+
 
 For research collaboration, please contact [dongqishi@sztu.edu.cn](mailto:dongqishi@sztu.edu.cn).
